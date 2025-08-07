@@ -246,3 +246,29 @@ include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "
 
 #lock session
     bindsym $mod+Escape exec swaylock
+
+
+# activer les bordures
+default_border normal
+default_floating_border normal
+
+# Espaces entre fenêtres
+gaps inner 7
+
+# Espaces en haut et en bas (bords extérieurs)
+gaps outer 4
+default_border pixel 3
+smart_borders no
+
+
+# Bordures fenêtres focalisées (focus) en bleu pastel clair
+client.focused          #ff89b4fa #ff1e1e2e #ffffffff #ff89b4fa #ff89b4fa
+
+# Bordures fenêtres non focalisées (unfocused) en gris doux
+client.unfocused        #ff585b70 #ff1e1e2e #ffa6adc8 #ff000000 #ff000000
+
+# Bordures fenêtres en état urgent (urgent) en rouge doux
+client.urgent           #ffe78284 #ff1e1e2e #ffffffff #ffe78284 #ffe78284
+
+# Bordures fenêtres focalisées mais inactives (focused_inactive) en gris foncé
+client.focused_inactive #ff2a2d3e #ff1e1e2e #ffa6adc8 #ff000000 #ff000000
