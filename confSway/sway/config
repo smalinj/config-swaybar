@@ -245,7 +245,7 @@ include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "
     bindsym Shift+Print exec grim -g "$(slurp)" /home/arthur/Images/screenshot_$(date +%s).png
 
 #lock session
-    bindsym $mod+Escape exec swaylock
+    bindsym $mod+Escape exec ~/.config/rofi/powermenu/type-1/powermenu.sh &
 
 
 # activer les bordures
