@@ -70,7 +70,7 @@ run_cmd() {
 			amixer set Master mute
 			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
-			logout
+			exit
 		fi
 	else
 		exit 0
