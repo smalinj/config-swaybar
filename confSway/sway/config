@@ -33,7 +33,7 @@ set $menu /var/home/arthur/.config/rofi/launchers/type-1/launcher.sh &
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg, jxl-pixbuf-loader
-output * bg /home/arthur/Images/satellite.png fill
+output * bg /home/arthur/Images/astronaut.png fill
 #
 # Example configuration:
 #
@@ -248,28 +248,23 @@ include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "
 #lock session
     bindsym $mod+Escape exec ~/.config/rofi/powermenu/type-1/powermenu.sh &
 
-
-# activer les bordures
-default_border normal
-default_floating_border normal
-
 # Espaces entre fenêtres
-gaps inner 7
+gaps inner 4
 
 # Espaces en haut et en bas (bords extérieurs)
 gaps outer 4
 default_border pixel 3
 smart_borders no
 
+# Bordures fenêtres non focalisées (unfocused) en gris doux, discret mais lisible
+client.unfocused        #585b70 #1e1e2e #a6adc8 #000000 #000000
 
-# Bordures fenêtres focalisées (focus) en bleu pastel clair
-client.focused          #ff89b4fa #ff1e1e2e #ffffffff #ff89b4fa #ff89b4fa
+# Bordures fenêtres en état urgent (urgent) en rouge doux pastel, bien visible
+client.urgent           #e78284 #1e1e2e #ffffff #e78284 #e78284
 
-# Bordures fenêtres non focalisées (unfocused) en gris doux
-client.unfocused        #ff585b70 #ff1e1e2e #ffa6adc8 #ff000000 #ff000000
+# Bordures fenêtres focalisées mais inactives (focused_inactive) en gris foncé élégant
+client.focused_inactive #2a2d3e #1e1e2e #a6adc8 #000000 #000000
 
-# Bordures fenêtres en état urgent (urgent) en rouge doux
-client.urgent           #ffe78284 #ff1e1e2e #ffffffff #ffe78284 #ffe78284
+# Bordures fenêtres focalisées (focused) en vert pastel plus foncé, doux et visible
+client.focused          #388c51 #1e1e2e #ffffff #388c51 #388c51
 
-# Bordures fenêtres focalisées mais inactives (focused_inactive) en gris foncé
-client.focused_inactive #ff2a2d3e #ff1e1e2e #ffa6adc8 #ff000000 #ff000000
