@@ -1,19 +1,19 @@
 format = """
-[╭─](surface0)\
+[╭─](surface0)\
 $os\
-[ ](bg:lavender fg:surface0)\
+[ ](bg:lavender fg:surface0)\
 $username\
 $hostname\
-[](bg:peach fg:lavender)\
+[](bg:peach fg:lavender)\
 [  ](bg:peach fg:surface0)\
 $directory\
 [ ](bg:peach)\
-[](bg:green fg:peach)\
+[](bg:green fg:peach)\
 $git_branch\
 $git_status\
 $git_commit\
 $git_metrics\
-[](fg:green bg:yellow)\
+[](fg:green bg:yellow)\
 $c\
 $rust\
 $golang\
@@ -23,19 +23,19 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:yellow bg:sapphire)\
+[](fg:yellow bg:sapphire)\
 $docker_context\
 $conda\
-[](fg:sapphire)\
+[](fg:sapphire)\
 $fill\
-[](fg:red)\
+[](fg:red)\
 $status\
-[](fg:lavender bg:red)\
+[](fg:lavender bg:red)\
 $cmd_duration\
-[](bg:lavender fg:surface0)\
+[](bg:lavender fg:surface0)\
 $time\
 $battery\
-[─╮](fg:surface0)\
+[─╮](fg:surface0)\
 $line_break\
 [╰─](surface0)\
 $character\
