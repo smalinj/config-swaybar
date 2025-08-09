@@ -24,6 +24,12 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+#Alias's for sway conf
+alias sway='cd /etc/sway/' # navigate to sway folder
+alias config='cd ~/.config' #navigate to others personnal configs
+alias nsway='sudo nano /etc/sway/config' #edit sway config
+alias cpbashrc='cp ~/.bashrc ~/.config/confBashrc/.' # copy bashrc file to git
+alias cpsway='cp -r /etc/sway/ ~/.config/confSway/.' # copy sway folder to git
 
 
 # Alias's for multiple directory listing commands
