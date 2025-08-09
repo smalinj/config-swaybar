@@ -30,7 +30,11 @@ alias config='cd ~/.config' #navigate to others personnal configs
 alias nsway='sudo nano /etc/sway/config' #edit sway config
 alias cpbashrc='cp ~/.bashrc ~/.config/confBashrc/.' # copy bashrc file to git
 alias cpsway='cp -r /etc/sway/ ~/.config/confSway/.' # copy sway folder to git
+alias nbashrc='sudo nano ~/.bashrc' # edit bashrc
 
+
+#ALias's for Zoxide
+alias zi='z -i' # interactive mode
 
 # Alias's for multiple directory listing commands
 alias la='ls -Alh'                # show hidden files
@@ -80,6 +84,8 @@ alias snano='sudo nano'
 export PATH="$HOME/.local/bin:$PATH"
 
 eval "$(starship init bash)"
+
+eval "$(zoxide init bash)"
 
 
 fastfetch
