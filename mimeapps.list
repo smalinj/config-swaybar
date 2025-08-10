@@ -1,3 +1,6 @@
 [Added Associations]
 text/plain=org.gnome.TextEditor.desktop;
 image/png=org.gimp.GIMP.desktop;org.gnome.Loupe.desktop;
+
+[Default Applications]
+image/png=org.gnome.Loupe.desktop

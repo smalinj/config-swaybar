@@ -17,14 +17,6 @@
         "battery",
         "custom/power"
     ],
-    "sway/taskbar": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "on-click-right": "fullscreen",
-        "icon-theme": "WhiteSur",
-        "icon-size": 25,
-        "tooltip-format": "{title}"
-    },
     "sway/workspaces": {
 	"on-click": "activate",
 	"format": "{icon}",
@@ -60,7 +52,6 @@
     },
      "clock": {
         "tooltip-format": "{calendar}",
-        "format-alt": "  {:%a, %d %b %Y}",
         "format": "  {:%H:%M}"
     },
     "network": {
