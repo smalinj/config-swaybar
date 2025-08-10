@@ -32,6 +32,8 @@ alias cpbashrc='cp ~/.bashrc ~/.config/confBashrc/.' # copy bashrc file to git
 alias cpsway='cp -r /etc/sway/ ~/.config/confSway/.' # copy sway folder to git
 alias nbashrc='sudo nano ~/.bashrc' # edit bashrc
 
+#Alias firefox
+alias firefox='flatpak run org.mozilla.firefox'
 
 #ALias's for Zoxide
 alias zi='z -i' # interactive mode
@@ -89,3 +91,4 @@ eval "$(zoxide init bash)"
 
 
 fastfetch
+

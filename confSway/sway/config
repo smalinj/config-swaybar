@@ -252,19 +252,31 @@ include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "
 gaps inner 4
 
 # Espaces en haut et en bas (bords extérieurs)
-gaps outer 4
-default_border pixel 3
+gaps outer 2
+default_border pixel 4
 smart_borders no
 
-# Bordures fenêtres non focalisées (unfocused) en gris doux, discret mais lisible
-client.unfocused        #585b70 #1e1e2e #a6adc8 #000000 #000000
+# =======================
+# 🎨 Couleurs fenêtres Sway - Thème Catppuccin Mocha adapté
+# =======================
 
-# Bordures fenêtres en état urgent (urgent) en rouge doux pastel, bien visible
+# Fenêtres non focalisées
+# Bordure gris doux (#a6adc8), fond sombre (#1e1e2e),
+# texte gris doux, indicateurs noirs (non visibles)
+client.unfocused        #c0d0c0 #1e1e2e #1e1e2e #c0d0c0 #c0d0c0
+
+# Fenêtres focalisées mais inactives
+# Bordure gris moyen (#7c818c) plus sombre que l'unfocused pour bien différencier,
+# fond sombre, texte gris clair
+client.focused_inactive #4a4e69 #1e1e2e #1e1e2e #4a4e69 #4a4e69
+
+# Fenêtres focalisées
+# Bordure orange pastel doux (#fab387) pour bien ressortir,
+# fond sombre, texte foncé pour contraste
+client.focused          #6b46c1 #1e1e2e #1e1e2e #6b46c1 #6b46c1
+
+# Fenêtres urgentes
+# Bordure rouge pastel (#e78284) vive et bien visible,
+# fond sombre, texte blanc
 client.urgent           #e78284 #1e1e2e #ffffff #e78284 #e78284
-
-# Bordures fenêtres focalisées mais inactives (focused_inactive) en gris foncé élégant
-client.focused_inactive #2a2d3e #1e1e2e #a6adc8 #000000 #000000
-
-# Bordures fenêtres focalisées (focused) en vert pastel plus foncé, doux et visible
-client.focused          #388c51 #1e1e2e #ffffff #388c51 #388c51
 
